@@ -40,7 +40,7 @@ class ProductItem extends HTMLElement {
 
     const style = document.createElement('style');
     
-    style.textContent = '
+    style.textContent = `
       .price {
         color: green;
         font-size: 1.8em;
@@ -105,7 +105,7 @@ class ProductItem extends HTMLElement {
         text-overflow: unset;
       }
 
-    ';
+    `;
 
     // Attach the created elements to the shadow dom
     shadow.appendChild(style);
