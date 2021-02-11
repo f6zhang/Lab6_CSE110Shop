@@ -4,10 +4,10 @@ class ProductItem extends HTMLElement {
   
   constructor() {
     super();
+    var data;
   }
   
   connectedCallback() {
-    let data;
     
     console.log(data);
     
