@@ -2,8 +2,6 @@
 
 class ProductItem extends HTMLElement {
   
-  
-  
   constructor() {
     super();
   }
