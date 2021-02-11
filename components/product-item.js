@@ -6,7 +6,7 @@ class ProductItem extends HTMLElement {
     let shadow = this.attachShadow({mode: 'open'});
     
     let wrapper = document.createElement('span');
-    wrapper.setAttribute('class', 'wrapper');
+    wrapper.setAttribute('class', 'product');
     
     let img = document.createElement('img');
     img.width = 200;   
