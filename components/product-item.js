@@ -60,6 +60,8 @@ class ProductItem extends HTMLElement {
       }else{
         button.textContent = "Remove from Cart";; 
       }
+    }else{
+      button.textContent = "Add to Cart";
     }
     
     wrapper.appendChild(button);
