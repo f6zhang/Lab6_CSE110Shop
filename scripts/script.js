@@ -8,7 +8,7 @@ window.addEventListener('DOMContentLoaded', () => {
     let product_list = document.getElementById("product-list");
     for (let i=0; i < data.length; i++){
       let product = document.createElement("product-item");
-      product.setAttribute('data', data);
+      product.setAttribute('data', data[i]);
       product_list.appendChild(product);
     }
   })
