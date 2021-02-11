@@ -1,6 +1,9 @@
 // product-item.js
 
 class ProductItem extends HTMLElement {
+  
+  let data;
+  
   constructor() {
     super();
   }
