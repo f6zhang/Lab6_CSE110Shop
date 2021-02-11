@@ -9,6 +9,9 @@ class ProductItem extends HTMLElement {
   }
   
   connectedCallback() {
+    
+    localStorage.setItem(data.id, "0");
+    
     let shadow = this.attachShadow({mode: 'open'});
     
     let wrapper = document.createElement('span');
@@ -42,11 +45,13 @@ class ProductItem extends HTMLElement {
        if (button.textContent == "Add to Cart"){
          button.textContent = "Remove from Cart";
          let count = document.getElementById("cart-count");
-         count.textContent = (parseInt(count.textContent) + 1).toString()
+         count.textContent = (parseInt(count.textContent) + 1).toString();
+         localStorage.setItem(data.id, "1");
        }else{
          button.textContent = "Add to Cart";
          let count = document.getElementById("cart-count");
-         count.textContent = (parseInt(count.textContent) - 1).toString()
+         count.textContent = (parseInt(count.textContent) - 1).toString();
+         localStorage.setItem(data.id, "1");
        }
     }
     button.textContent = "Add to Cart";
