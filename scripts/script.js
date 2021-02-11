@@ -1,6 +1,7 @@
 // Script.js
 
 window.addEventListener('DOMContentLoaded', () => {
-  let items = fetch("https://fakestoreapi.com/products");
-  console.log(item);
+  fetch("https://fakestoreapi.com/products")
+  .then(response => response.json())
+  .then(data => console.log(data));
 });
