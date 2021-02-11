@@ -4,12 +4,11 @@ class ProductItem extends HTMLElement {
   
   constructor() {
     super();
-    var data;
   }
   
   connectedCallback() {
     
-    data = JSON.parse(data);
+    let data = this.getAttribute("data");
     
     let shadow = this.attachShadow({mode: 'open'});
     
