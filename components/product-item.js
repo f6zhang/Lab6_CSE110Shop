@@ -9,6 +9,8 @@ class ProductItem extends HTMLElement {
   connectedCallback() {
     let data;
     
+    console.log(data);
+    
     let shadow = this.attachShadow({mode: 'open'});
     
     let wrapper = document.createElement('span');
