@@ -2,13 +2,14 @@
 
 class ProductItem extends HTMLElement {
   
-  let data;
+  
   
   constructor() {
     super();
   }
   
   connectedCallback() {
+    let data;
     
     localStorage.setItem(data.id, "0");
     
