@@ -4,7 +4,7 @@ class ProductItem extends HTMLElement {
   
   constructor() {
     super();
-    var data;
+    let data;
   }
   
   connectedCallback() {
