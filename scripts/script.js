@@ -2,6 +2,12 @@
 
 window.addEventListener('DOMContentLoaded', () => {
   
+  let cart = document.getElementById("cart-icon");
+  cart.src = "./assets/cart-icon.png";
+  
+  let shop = document.getElementById("shop-icon");
+  shop.src = "./assets/shop-icon.png";
+  
   if (localStorage.getItem("count") != null){
     let count = document.getElementById("cart-count");
     count.textContent = localStorage.getItem("count");
