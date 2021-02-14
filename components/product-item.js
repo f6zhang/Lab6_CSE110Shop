@@ -27,6 +27,7 @@ class ProductItem extends HTMLElement {
     title.setAttribute('class', 'title');
     if (this.hasAttribute('data')){
       title.textContent = data.title;
+      console.log(data.title);
     }
     wrapper.appendChild(title);
     
