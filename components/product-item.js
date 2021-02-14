@@ -35,7 +35,7 @@ class ProductItem extends HTMLElement {
     
     price.setAttribute('class', 'price');
     if (this.hasAttribute('data')){
-      title.textContent = "$" + data.price;
+      price.textContent = "$" + data.price;
     }
     wrapper.appendChild(price);
     
@@ -74,7 +74,7 @@ class ProductItem extends HTMLElement {
         color: green;
         font-size: 1.8em;
         font-weight: bold;
-         margin: 0;
+        margin: 0;
       }
 
       .product {
